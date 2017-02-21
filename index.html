@@ -1,8 +1,8 @@
 <html>
-<link rel="stylesheet" type="text/css" href="singlestyle.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <title>
-Single Tear Entertainment
+Jordacious Development
 </title>
 
 <style>
@@ -173,19 +173,101 @@ window.onclick = function(event) {
 }
 </script>
 -->
-<header>
-	<center><H1>The Single Tear Entertainment Website, V.1.1</H1></center>
+
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+ <header>
+<p><img src="jordaciousdevelopment.png" alt="test" width="356" height="27">
 </header>
 
-<p>
-<h3>Release 1.1 for the Single Tear Entertainment website.</h3>
-</p>
+<div id="floatbutton">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
 
-<p><b>Change Log:</b></p>
-<ol>
-	<li><p>Removed login system for now<p></li>
-	<li><p>Added comments system<p></li>
-</ol>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!--  <a href="#">Patreon</a>
+  <a href="#">YouTube</a>
+  <a href="#">Facebook</a>
+  <a href="#">Email</a>-->
+  <div>
+<button onclick="location.href=''" class="button button6"><span><b>Email</b></span></button>
+</div>
+
+<div>
+<button onclick="location.href=''" class="button button2"><span><b>Facebook</b></span></button>
+</div>
+
+
+<div>
+<button onclick="location.href='https://www.patreon.com/singletearentertainment'" class="button"><span><b>Patreon</b></span></button>
+</div>
+
+<div>
+<button onclick="location.href=''" class="button button3"><span><b>YouTube</b></span></button>
+</div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    </div>
+	 
+</body>
+
+</br>
 
 <b>What I want to achieve:</b>
 <ol>
@@ -193,10 +275,32 @@ window.onclick = function(event) {
 	<li><p>A working login system<p></li>
 </ol>
 
-<div align="right">
-<button onclick="location.href='https://www.patreon.com/singletearentertainment'" class="button"><span><b>Patreon</b></span></button>
-</div>
+<p><b>Change Log:</b></p>
+<ol>
+	<li><p>Removed login system for now<p></li>
+	<li><p>Removed comments system (will be added later)<p></li>
+</ol>
 
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<!--
 <div align="right">
 <button onclick="location.href=''" class="button button2"><span><b>Facebook</b></span></button>
 </div>
@@ -208,25 +312,12 @@ window.onclick = function(event) {
 <div align="right">
 <button onclick="location.href=''" class="button button6"><span><b>Email</b></span></button>
 </div>
-
+-->
 </body>
-
-<!--<p>
-	<center><p class="one">Website Coded and Created by Jordacious*, Made in 2017</br>
-	Some code is learned or used from other sources</p></center>
-</p>-->
-
-<header>
-	<center><H1>The Comments Section</H1></center>
-</header>
-
-<div align="center">
-<!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_5895375284027(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_5895375284027"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_5895375284027=document.createElement('script');fcs_5895375284027.type="text/javascript";fcs_5895375284027.src=ajaxpath_5895375284027((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=5895375284027&s=#!5895375284027");setTimeout("document.getElementById('fcs_div_5895375284027').appendChild(fcs_5895375284027)",1);})();</script><noscript><div><a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a></div></noscript><!-- End Comments JavaScript Code -->
-</div>
 
 <div class="boxed">
 <center>This website was created by Jordacious in 2017. </br>Some parts of this website and or code are learned </br>and/or from other
-sources such as </br>W3Schools, Tinkernut, StackOverFlow, TheSiteWizard and possibly more.</center>
+sources such as </br>W3Schools, Tinkernut, StackOverFlow, FontMeme, TheSiteWizard and possibly more.</center>
 </div>
 
 </html>
