@@ -1,259 +1,102 @@
+<!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="style.css">
-
+<link rel="icon" href="code.ico" type="image/ico"/>
 <title>
 Jordacious Development
 </title>
 
-<style>
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-    background-color: #757575;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #757575;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn {float:left;width:50%}
-
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    color: #000;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
-    }
-}
-
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-</style>
-
 <body>
-
-
- <header>
+<header>
 <p><img class="image1" src="jordaciousdevelopment.png" alt="test" width="356" height="27">
 </header>
-
 <div id="floatbutton">
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 </div>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<!--  <a href="#">Patreon</a>
-  <a href="#">YouTube</a>
-  <a href="#">Facebook</a>
-  <a href="#">Email</a>-->
+<div align="center" id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div>
   
-  <div>
-<button onclick="location.href='https://jordacious.github.io/downloads/'" class="button button9"><span><b>Downloads</b></span></button>
-</div>
-  
-<div>
-<button onclick="location.href=''" class="button button6"><span><b>Email</b></span></button>
-</div>
-
-<div>
-<button onclick="location.href=''" class="button button2"><span><b>Facebook</b></span></button>
+<button class="button button13" onclick="location.href='https://jordacious.github.io/downloads/'">Downloads</button>  
+<button class="button button13" onclick="location.href='mailto:jordan.m.gresock@gmail.com'">Email</button>
+<button class="button button13" onclick="myFunction2()">Facebook</button>
+<button class="button button13" onclick="location.href='https://github.com/Jordacious'">Github</button>
+<button class="button button13" onclick="location.href='https://www.patreon.com/singletearentertainment'">Patreon</button>
+<button class="button button13" onclick="myFunction3()">YouTube</button>
 </div>
 
-<div>
-<button onclick="location.href='https://github.com/Jordacious'" class="button button8"><span><b>Github</b></span></button>
-</div>
-
-
-<div>
-<button onclick="location.href='https://www.patreon.com/singletearentertainment'" class="button"><span><b>Patreon</b></span></button>
-</div>
-
-<div>
-<button onclick="location.href=''" class="button button3"><span><b>YouTube</b></span></button>
-</div>
-
-<p style="font-size:14px; color: #fff; font-weight:bold; font-style:italic;">
+<p align="center" style="font-size:14px; color: #fff; font-weight:bold; font-style:italic;">
 *Not all links are set up as of now.
 </br>
-Site Version: 1.5
+Site Version: 1.6 (BETA)
 </p>
 
+<button class="button button13" onclick="myFunction()">&#9881; Settings &#9881; </br>(BETA)</button>
+
+<div align="center">
+<a onClick="firstFunction(); myFunction4();" href="#"><p>Invert</p></a>
+</div>
+
+<div align="center">
+<a onClick="secondFunction();" href="#"><p>Normal</p></a>
 </div>
 
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
-
+function myFunction4() {
+    document.getElementById("myImg").src = "githubwhite.png";
+}
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+function firstFunction() {
+      document.body.style.backgroundColor = "black"; 
+}
+function secondFunction() {
+      document.body.style.backgroundColor = "white"; 
+}
+function myFunction() {
+    alert("Not all settings work. As it says, these are in BETA.");
+}
+function myFunction2() {
+    alert("Sorry, the Facebook link is not setup yet.");
+}
+function myFunction3() {
+    alert("Sorry, the YouTube link is not setup yet.");
+}
 </script>
-    </div>
-	 
+
 </body>
+
+</div>
+
+<body>
 
 </br>
 
-<b>What I want to achieve:</b>
+<b>In the Works:</b>
+
 <ol>
 	<li><p>A comments section<p></li>
 	<li><p>A working login system<p></li>
+	<li><p>More Settings<p></li>
 </ol>
 
 <p><b>Change Log:</b></p>
 <ol>
-	<li><p>Removed login system for now<p></li>
-	<li><p>Removed comments system (will be added later)<p></li>
+	<li><p>Added Settings (BETA)<p></li>
 </ol>
 
-
-<!--
-<a href="https://jordacious.github.io/test.txt" download="atest">Download</a>
--->
-
-</br>
-	</br>
-		</br>
-			</br>
-				</br>
-					</br>
-						</br>
-							</br>
-								</br>
-								</br>
-							</br>
-						</br>
-					</br>
-				</br>
-			</br>
-		</br>
-	</br>
-</br>
 </body>
 
-<div class="boxed">
-<center>This website was created by Jordacious in 2017. </br>Some parts of this website and or code are learned </br>and/or from other
-sources such as </br>W3Schools, Tinkernut, StackOverFlow, FontMeme, TheSiteWizard and possibly more.
+
+<div align="center">
+<p><img id="myimg" class="image2" src="githubblack.png" align="middle" alt="test" width="100" height="100">
+</p>Hosted by Github</br>Coded By Jordacious
 </div>
 
-
-
-<center>
-<p><img class="image2" src="github.jpg" align="middle" alt="test" width="100" height="100"></p>Hosted by Github
-</center>
-
-</html>
 <!--Thank you to W3Schools, Tinkernut, StackOverFlow forums and other sources for teaching me HTML 
 Font used for picture: FAILED on FontMeme-->
+</html>
